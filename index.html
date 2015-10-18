@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Nerds»</title>
-    <meta name="description" content="Лучший барбершоп в Санкт-Петербурге">
+    <meta name="description" content="Лучший барбершоп в Санкт-Петербурге"> <--[DL] Зачем тебе такой метатэг? :) -->
   </head>
   <body>
     <header class="main-header"><!--фон серый и тянется на всю ширину окна, свмещает мменю, новость, слайдер-->
-      <div class="container clearfix"> <!--центровщик?-->
+      <div class="container clearfix"> <!--центровщик?--><--[DL] Да, всё верно-->
         <div class="header-logo">
           <a href="/"><img src="http://placehold.it/150x100" width="250" height="56" alt="Nerds"></a>
         </div>
@@ -27,11 +27,11 @@
             </li>
           </ul>
         </nav>
-        <div class="cart-block">
-          <img src="cart-icon" alt="">
+        <div class="cart-block"><--[DL] Если ты хочешь вынести корзину отдельни из списка, тогда оберни навигацию и корзину в дополнительный блок (этому блоку, потом, пропишешь свойство float:right)-->
+          <img src="cart-icon" alt=""> <--[DL] img здесь не нужен, иконка будет подгружать или фоном или с помощью иконочных шрифтов. Но об этом позже. :)-->
           <a href="#" class="cart-button">Корзина</a>
         </div>
-        <div class="top-promo-block"> <!--Вынести этот блок из из header?-->
+        <div class="top-promo-block"> <!--Вынести этот блок из из header?--> <--[DL] Нет, в хедере будет отображаться информация, которая есть на всех страницах-->
           <div class="container clearfix">
             <div class="promo-block">
               <h2 class="promo-slogan">Долго, дорого, скрупулезно.</h2> 
@@ -42,6 +42,8 @@
               <a href="" class="btn news">Узнать больше</a>
             </div>
             <div class="slider"><!--Как создать слайдер?-->
+            <--[DL] О том, как создать слайдер тебе расскажут на 6 лекции. Но если тебе не хочется ждать, я могу тебе рассказать на консультации. А пока можешь посмотреть
+            пример, как это можно сделать с помощью css: http://cssslider.com/-->
               <a href="#" class="top-slider"><img src="http://placehold.it/150x100" width="250" height="56" alt=""></a>
               <ul class="sloder-switcher">
                 <li><img src="#" alt=""></li>
@@ -72,7 +74,8 @@
         </article>
 
         <article class="service-column">
-          <a href="" class="service-image sites"><img src="http://placehold.it/150x100" width="250" height="56" alt="">
+          <a href="" class="service-image sites"> <--[DL] Оберни либо отдельно картинку и отдельно заголовок в ссылку, либо вообще её удали-->
+            <img src="http://placehold.it/150x100" width="250" height="56" alt="">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           </a>
