@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Дизайн-студия «Nerds»</title>
-    <meta name="description" content="Лучший барбершоп в Санкт-Петербурге"> <--[DL] Зачем тебе такой метатэг? :) -->
+    <title>Дизайн-студия "Nёrds"</title>
   </head>
   <body>
-    <header class="main-header"><!--фон серый и тянется на всю ширину окна, свмещает мменю, новость, слайдер-->
-      <div class="container clearfix"> <!--центровщик?--><--[DL] Да, всё верно-->
+    <header class="main-header">
+      <div class="container clearfix">
         <div class="header-logo">
-          <a href="/"><img src="http://placehold.it/150x100" width="250" height="56" alt="Nerds"></a>
+          <a href="/"><img src="http://placehold.it/160x88" width="160" height="88" alt="Nёrds"></a>
         </div>
         <nav class="breadcrumbs">
           <ul>
@@ -25,13 +24,12 @@
             <li>
               <a href="#">Контакты</a>
             </li>
+            <li>
+              <a class="cart buttin" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <div class="cart-block"><--[DL] Если ты хочешь вынести корзину отдельни из списка, тогда оберни навигацию и корзину в дополнительный блок (этому блоку, потом, пропишешь свойство float:right)-->
-          <img src="cart-icon" alt=""> <--[DL] img здесь не нужен, иконка будет подгружать или фоном или с помощью иконочных шрифтов. Но об этом позже. :)-->
-          <a href="#" class="cart-button">Корзина</a>
-        </div>
-        <div class="top-promo-block"> <!--Вынести этот блок из из header?--> <--[DL] Нет, в хедере будет отображаться информация, которая есть на всех страницах-->
+        <div class="top-promo-block"> 
           <div class="container clearfix">
             <div class="promo-block">
               <h2 class="promo-slogan">Долго, дорого, скрупулезно.</h2> 
@@ -44,7 +42,7 @@
             <div class="slider"><!--Как создать слайдер?-->
             <--[DL] О том, как создать слайдер тебе расскажут на 6 лекции. Но если тебе не хочется ждать, я могу тебе рассказать на консультации. А пока можешь посмотреть
             пример, как это можно сделать с помощью css: http://cssslider.com/-->
-              <a href="#" class="top-slider"><img src="http://placehold.it/150x100" width="250" height="56" alt=""></a>
+              <a href="#" class="top-slider"><img src="http://placehold.it/250x56" width="250" height="56" alt=""></a>
               <ul class="sloder-switcher">
                 <li><img src="#" alt=""></li>
                 <li><img src="#" alt=""></li>
@@ -58,30 +56,88 @@
     <main class="container clearfix">
       <div class="services-block">
         <article class="service-column">
-          <a href="" class="service-image sites"><img src="http://placehold.it/150x100" width="250" height="56" alt="">
-             <h3>Веб-сайты</h3>
-             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          </a>
-          <a href="#" class="btn order">Заказать</a>
+          <img src="http://placehold.it/240x123" width="240" height="123" alt="">
+          <h3>Приложения</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn order" href="#">Заказать</a>
         </article>
-
         <article class="service-column">
-          <a href="" class="service-image sites"><img src="http://placehold.it/150x100" width="250" height="56" alt="">
-            <h3>Приложения</h3> 
-            <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-          </a>
-          <a href="#" class="btn order">Заказать</a>
+          <img src="http://placehold.it/240x123" width="240" height="123" alt="">
+          <h3>Веб-сайты</h3>
+          <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+          <a class="btn order" href="#">Заказать</a>
         </article>
-
         <article class="service-column">
-          <a href="" class="service-image sites"> <--[DL] Оберни либо отдельно картинку и отдельно заголовок в ссылку, либо вообще её удали-->
-            <img src="http://placehold.it/150x100" width="250" height="56" alt="">
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          </a>
-          <a href="#" class="btn order">Заказать</a>
+          <img src="http://placehold.it/240x123" width="240" height="123" alt="">
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn order" href="#">Заказать</a>
         </article>
       </div>
+      <div class="main-content">
+        <div class="important info">
+          <h2>Мы маленькая но гордая дизайн студия из Краснодара</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.Работаем непокладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="list-of-services">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложени для iOS и Android</li>
+            <li>Cлайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="work-terms">
+          <div class="main-content-logo">
+            <img src="http://placehold.it/230x130" width="230" height="130" alt="Nёrds">
+            <div class="logo-caption"> 
+              SINCE 2004 <!--или это спан? Его там с помощью позишн абсолют разместить?-->
+            </div>
+            <div class="work-terms-list">
+              <ul>
+                <li>С самоотдачей 146%</li>
+                <li>Cоблюдая сроки на 100%</li>
+                <li>По предоплате 50%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partner-block">
+        <a class="clients-logo logo1" href="#"><img src="#" width="240" height="167" alt="Glukhanko"></a>
+        <a class="clients-logo logo2" href="#"><img src="#" width="240" height="167" alt="HTML Academy"></a>
+        <a class="clients-logo logo3" href="#"><img src="#" width="240" height="167" alt="Barbershop Borodinski"></a>
+      </div>
+      <div class="contacts-block">
+        <div class="google-map-link">
+          <img src="http://placehold.it/1200x415" width="1200" height="415" alt="Google-map">
+          <section class="contact-card">
+            <span>NЁRDS DESIGN STUDIO</span>
+            <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            +7 (812) 275-75-75<br>
+            <a class="btn contact-us" href="#">НАПИШИТЕ НАМ</a>
+          </section>
+          <div class="contact-logo">
+            <img src="#" width="60" height="60" alt="Nёrds">
+          </div>
+        </div>
+      </div>
     </main>
+    <footer class="container clearfix"> <!--В футэре 2 дива делать: для иконок соцсетей и текстового сообщени о скидке?-->
+      <section class="footer-social">
+          <ul class="footer-social-links">
+            <li>
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Cкидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
   </body>
 </html>
