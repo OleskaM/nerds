@@ -1,2 +1,1 @@
-# nerds
-personal site
+
