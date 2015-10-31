@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия "Nёrds"</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="header-logo">
+          <a href=""><img src="img/logo.png" width="160" height="88" alt="Nёrds"></a>
+        </div>
+        <nav class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="cart btn" href="#">Корзина</a>
+        </nav>
+        <h1 class="page-title">Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </header>
+    <main class="container clearfix">
+      <div class="filter-block">
+        <form action="#" method="get">
+          <fieldset>
+            <h2 class="price">Стоимость:</h2>
+            <div class="range">
+              <span class="range left"></span>
+              <span class="range-right"></span>
+            </div>
+            <label>от<input type="number" name="price-from" value="0"> </label>
+            <label>до<input type="number" name="price-to" value"15000"> </label>
+          </fieldset>
+          <fieldset>
+            <h2 class="grid">Сетка</h2>
+            <label>
+              <input type="radio" name="grid" value="responsive" checked>
+              Адаптиваня
+            </label>
+            <label>
+              <input type="radio" name="grid" value="fixed">
+              Фиксированная
+            </label>
+            <label>
+              <input type="radio" name="grid" value="fluid">
+              Резиновая
+            </label>
+          </fieldset>
+          <fieldset>
+            <h2>Особенности</h2>
+            <label><input type="checkbox" name="slider" checked>
+              Слайдер
+            </label>
+            <label><input type="checkbox" name="features">
+              Блок преимуществ
+            </label>
+            <label><input type="checkbox" name="news"checked>
+              Новости
+            </label>
+            <label><input type="checkbox" name="gallery">
+              Галерея
+            </label>
+            <label><input type="checkbox" name="busket">
+              Корзина
+            </label>
+          </fieldset>
+          <input type="submit" value="Показать">
+        </form>
+      </div>
+      <div class="catalog-box"
+        <div class="sorter-panel">
+          <span class="sort">Сортировать:</span>
+          <ul>
+            <li>
+              <a class="by-type" href="#">по типу</a>
+            </li>
+            <li>
+              <a class="by-price" href="#">по цене</a>
+            </li>
+            <li>
+              <a class="by-function" href="#">по функционалу</a>
+            </li>
+          </ul>
+          <spam class="sorter-indicator"></spam>
+        </div>
+        <div class="layout-catalog">
+
+          <div class="layout layout-1">
+            <div class="layout-box top-strip"></div>
+            <a class="layout-preview" href="#">
+              <img src="img/aviator.jpg" width="240" height="240" alt="Aviator">
+            </a>
+            <div class="layout-1 hidden">
+              <span>Aviator</span>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a class="price btn" href="#">8000 р.</a>
+            </div>
+          </div>
+          <div class="layout layout-2">
+            <div class="layout-box top-strip"></div>
+            <a class="layout-preview active" href="#">
+              <img src="img/sunset.jpg" width="240" height="240" alt="Sunset">
+            </a>
+            <div class="layout-2 hidden">
+              <span>Sunset</span>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="price btn" href="#">10000 р.</a>
+            </div>
+          </div>
+          <div class="layout layout-3">
+            <div class="layout-box top-strip"></div>
+            <a class="layout-preview" href="#">
+              <img src="img/forte.jpg" width="240" height="240" alt="Forte">
+            </a>
+          </div>
+          <div class="layout layout-4">
+            <div class="layout-box top-strip"></div>
+            <a class="layout-preview" href="#">
+              <img src="img/modern-organic.jpg" width="240" height="240" alt="Modern Organic Thai">
+            </a>
+          </div>
+          <div class="layout layout-5">
+            <div class="layout-box top-strip"></div>
+            <a class="layout-preview" href="#">
+              <img src="img/avenue.jpg" width="240" height="240" alt="Avenue">
+            </a>
+          </div>
+          <div class="layout layout-6">
+            <div class="layout-box top-strip"></div>
+            <a class="layout-preview" href="#">
+              <img src="img/dovetail.jpg" width="240" height="240" alt="Dovetail">
+            </a>
+          </div>
+        </div>
+        <div class="contacts-block">
+        <div class="google-map-link">
+          <img src="img/google-map-img.png" width="1200" height="416" alt="Google-map">
+          <section class="contact-card">
+            <span>NЁRDS DESIGN STUDIO</span>
+            <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            +7 (812) 275-75-75<br>
+            <a class="btn contact-us" href="#">НАПИШИТЕ НАМ</a>
+          </section>
+          <div class="contact-logo">
+            <img src="img/logo-contact-block.png" width="231" height="190" alt="Nёrds">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container clearfix">
+      <section class="footer-social">
+          <ul class="footer-social-links">
+            <li>
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Cкидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+  </body>
+</html>
