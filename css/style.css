@@ -65,37 +65,36 @@
 .icon-check-on:before { content: '\2611'; } /* '☑' */
 .icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
  
- /*index-page style*/
+ /*INDEX-page styles*/
 
 body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto' 'Arial' sans-serif;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     color: #283136;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' 'Arial' sans-serif;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' 'Arial' sans-serif;
     font-size: 36px;
     line-height: 36px;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' 'Arial' sans-serif;
     font-size: 18px;
     line-height: 30px;
-
-    font-weight: normal;
+    font-weight: 500;
     text-transform: uppercase;
 
 }
@@ -617,7 +616,7 @@ footer {
 }
 
 .social-btn:hover {
- background-color: #fb565a;
+    background-color: #fb565a;
 }
 
 .social-btn:focus{
@@ -635,22 +634,198 @@ footer {
 }
 .footer-social-slogan p {
     margin: 0px;
+}
 
 
+/*CATALOG-page styles*/
 
+.main-page-title{
+    background-color: #eeeeee;
+    padding-top: 65px;
+    min-height: 175px;
+}
 
+.big-heading {
+    margin:0;
+    padding:0;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: Roboto, Arial, sans-serif;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: normal;
+}
 
+.container-catalog {
+    width: 880px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
 
+.filter-block {
+    width: 240px;
+    float: left;
+}
+.filter-block h2 {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
 
+.range-filter {
+    margin-bottom: 50px;
+}
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
 
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
 
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
 
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
 
+.range-controls .toggle-min {
+    left: 50px;
+}
 
+.range-controls .toggle-max {
+    left: 110px;
+}
 
+.price-controls {
+    font-size: 0;
+}
 
+.price-controls label {
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+}
 
+.max-price {
+    text-align: right;
+}
 
+.price-controls input {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    width: 60px;
+    margin-left: 10px;
+    padding: 8px 10px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f1f1f1;
+}
+
+.grid-filter {
+    margin-bottom: 35px;
+}
+.grid-filter input[type='radio'] {
+    display: none;
+}
+
+input[type='radio'] + label {
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    vertical-align: top;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+input[type='radio'] + label:before {
+    font-family: 'symbols-nerds';
+    content: '\25cb';
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #c1c1c1;
+}
+
+input[type='radio']:checked + label:before {
+    content: '\25cf';
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;   
+    color: #b5b5b5;
+}
+
+.catalog-block {
+    width: 560px;
+    float: right;
+}
+.features-filter {
+    margin-bottom: 40px;
+}
+
+.features-filter input[type='checkbox'] {
+    display: none;
+}
+input[type='checkbox'] + label {
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    vertical-align: top;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+input[type='checkbox'] + label:before {
+    font-family: 'symbols-nerds';
+    content: '\2610';
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #c1c1c1;
+}
+
+input[type='checkbox']:checked + label:before {
+    content: '\2611';
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;   
+    color: #b5b5b5;
+}
 
 
 

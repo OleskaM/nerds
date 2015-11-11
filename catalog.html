@@ -8,80 +8,85 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="main-header">
       <div class="container clearfix">
         <div class="header-logo">
-          <a href="index.html"><img src="img/logo.png" width="160" height="88" alt="Nёrds"></a>
+          <a href="index.html"> <img src="img/logo.png" width="139" height="58" alt="Nёrds"> </a>
         </div>
-        <nav class="breadcrumbs">
+        <nav class="main-menu">
           <ul>
-            <li>
-              <a href="#">Студия</a>
+            <li class="active">
+              <a href="index.html">Студия</a>
             </li>
             <li>
-              <a href="#">Клиенты</a>
+              <a href="index.html">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="index.html">Магазин</a>
             </li>
             <li>
-              <a href="#">Контакты</a>
+              <a href="index.html">Контакты</a>
             </li>
           </ul>
-          <a class="cart btn" href="#">Корзина</a>
+          <div class="basket">
+            <a href="index.html"><i class="icon-basket"></i>Корзина</a>
+          </div> 
         </nav>
-        <h1 class="page-title">Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </header>
-    <main class="container clearfix">
+
+    <div class="main-page-title">
+      <div class="container">
+        <h1 class="big-heading">Добро пожаловать в магазин <br>
+        готовых макетов</h1>
+      </div>
+    </div>
+
+    <main class="container-catalog clearfix">
       <div class="filter-block">
-        <form action="#" method="get">
-          <fieldset>
+        <form action="#" method="GET">            
+          <div class="range-filter">
             <h2 class="price">Стоимость:</h2>
-            <div class="range">
-              <span class="range left"></span>
-              <span class="range-right"></span>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-            <label>от<input type="number" name="price-from" value="0"> </label>
-            <label>до<input type="number" name="price-to" value"15000"> </label>
-          </fieldset>
-          <fieldset>
-            <h2 class="grid">Сетка</h2>
-            <label>
-              <input type="radio" name="grid" value="responsive" checked>
-              Адаптиваня
-            </label>
-            <label>
-              <input type="radio" name="grid" value="fixed">
-              Фиксированная
-            </label>
-            <label>
-              <input type="radio" name="grid" value="fluid">
-              Резиновая
-            </label>
-          </fieldset>
-          <fieldset>
-            <h2>Особенности</h2>
-            <label><input type="checkbox" name="slider" checked>
-              Слайдер
-            </label>
-            <label><input type="checkbox" name="features">
-              Блок преимуществ
-            </label>
-            <label><input type="checkbox" name="news"checked>
-              Новости
-            </label>
-            <label><input type="checkbox" name="gallery">
-              Галерея
-            </label>
-            <label><input type="checkbox" name="busket">
-              Корзина
-            </label>
-          </fieldset>
-          <input type="submit" value="Показать">
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
+          <div class="grid-filter">
+            <h2 class="grid">Сетка:</h2>
+            <input type="radio" id="grid-1" name="grid" value="responsive" checked>
+            <label for="grid-1">Адаптивная</label>
+            <input type="radio" id="grid-2" name="grid" value="fixed">
+            <label for="grid-2">Фиксированная</label>
+            <input type="radio" id="grid-3" name="grid" value="fluid">
+            <label for="grid-3">Резиновая</label>
+          </div>
+          <div class="features-filter">          
+            <h2>Особенности:</h2>
+              <input type="checkbox" id="feature-1" checked>
+              <label for="feature-1">Слайдер</label>
+              <input type="checkbox" id="feature-2">
+              <label for="feature-2">Блок преимуществ</label>
+              <input type="checkbox" id="feature-3" checked>
+              <label for="feature-3">Новости</label>
+              <input type="checkbox" id="feature-4">
+              <label for="feature-4"> Галерея</label>
+              <input type="checkbox" id="feature-5">
+              <label for="feature-5">Корзина</label>
+            </div>
+            <input type="submit" value="Показать" class="btn">
         </form>
       </div>
-      <div class="catalog-box"
+
+      <div class="catalog-block">
         <div class="sorter-panel">
           <span class="sort">Сортировать:</span>
           <ul>
@@ -97,8 +102,8 @@
           </ul>
           <spam class="sorter-indicator"></spam>
         </div>
-        <div class="layout-catalog">
 
+        <div class="layout-catalog">
           <div class="layout layout-1">
             <div class="layout-box top-strip"></div>
             <a class="layout-preview" href="#">
@@ -146,38 +151,64 @@
             </a>
           </div>
         </div>
-        <div class="contacts-block">
-        <div class="google-map-link">
-          <img src="img/google-map-img.png" width="1200" height="416" alt="Google-map">
-          <section class="contact-card">
-            <span>NЁRDS DESIGN STUDIO</span>
-            <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</p>
-            +7 (812) 275-75-75<br>
-            <a class="btn contact-us" href="index.html">НАПИШИТЕ НАМ</a>
-          </section>
-          <div class="contact-logo">
-            <img src="img/logo-contact-block.png" width="231" height="190" alt="Nёrds">
-          </div>
-        </div>
       </div>
     </main>
+
+
+    <div class="contacts-block" id="map">  
+      <div class="container">
+        <section class="contact-card">
+          <span class="contact-header">NЁRDS DESIGN STUDIO</span>
+          <p class="adress">191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8</p>
+          <span class="phone">+7 (812) 275-75-75</span>
+          <a class="btn contact-us" href="#">НАПИШИТЕ НАМ</a>
+        </section>
+      </div>
+    </div>   
+
     <footer class="container clearfix">
-      <section class="footer-social">
-          <ul class="footer-social-links">
-            <li>
-              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            </li>
-            <li>
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-            </li>
-          </ul>
+      <div class="footer-social">   
+        <ul class="footer-social-links">
+          <li>
+            <a class="social-btn social-btn-vk" href="#"><i class="icon-facebook"></i></a>          
+          </li>
+          <li>
+            <a class="social-btn social-btn-fb" href="#"> <i class="icon-vk"></i></a>
+          </li>
+          <li>
+            <a class="social-btn social-btn-inst" href="#"><i class="icon-instagramm"></i></a>
+          </li>
+        </ul>      
+      </div>
+      <div class="footer-social-slogan">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Cкидка 10% для друзей из социальных сетей.</p>
-      </section>
+      </div>
     </footer>
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.939460, 30.32048], 
+            zoom: 16 
+        }),
+        myPlacemark = new ymaps.Placemark([59.938554, 30.32248],
+           {
+            hintContent: 'Nёrds'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/baloon.png', 
+            iconImageSize: [231, 190], 
+            iconImageOffset: [-49, -195] 
+        });
+
+    myMap.geoObjects.add(myPlacemark);
+});
+
+</script>
+
+<div id="map" class="map"></div>
   </body>
 </html>
