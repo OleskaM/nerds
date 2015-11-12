@@ -7,8 +7,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
 
+  <body>
     <header class="main-header">
       <div class="container clearfix">
         <div class="header-logo">
@@ -78,7 +78,7 @@
               <input type="checkbox" id="feature-3" checked>
               <label for="feature-3">Новости</label>
               <input type="checkbox" id="feature-4">
-              <label for="feature-4"> Галерея</label>
+              <label for="feature-4">Галерея</label>
               <input type="checkbox" id="feature-5">
               <label for="feature-5">Корзина</label>
             </div>
@@ -100,57 +100,119 @@
               <a class="by-function" href="#">по функционалу</a>
             </li>
           </ul>
-          <spam class="sorter-indicator"></spam>
+          <div class="sorter-indicator"></div>
         </div>
 
-        <div class="layout-catalog">
-          <div class="layout layout-1">
-            <div class="layout-box top-strip"></div>
-            <a class="layout-preview" href="#">
+        <div class="catalog-items">
+          <article class="layout-item">
+            <div class="top-strip">
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+            </div>
+            <a class="layout-image" href="#">
               <img src="img/aviator.jpg" width="240" height="240" alt="Aviator">
             </a>
-            <div class="layout-1 hidden">
-              <span>Aviator</span>
-              <p>Одностраничный макет с авторским дизайном</p>
-              <a class="price btn" href="#">8000 р.</a>
+            <section class="layout-price hidden">
+              <span class="layout-price-title">Aviator</span>
+              <p>Одностраничный макет<br>
+              с авторским дизайном</p>
+              <a class="btn price" href="#">8000 р.</a>
+            </section>
+          </article>
+
+          <article class="layout-item">
+            <div class="top-strip">
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
             </div>
-          </div>
-          <div class="layout layout-2">
-            <div class="layout-box top-strip"></div>
-            <a class="layout-preview active" href="#">
+            <a class="layout-image" href="#">
               <img src="img/sunset.jpg" width="240" height="240" alt="Sunset">
             </a>
-            <div class="layout-2 hidden">
-              <span>Sunset</span>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="price btn" href="#">10000 р.</a>
+            <section class="layout-price hidden">
+              <span class="layout-price-title">Sunset</span>
+              <p>Интернет-магазин<br>
+              с личным кабинетом</p>
+              <a class="btn price" href="#">10000 р.</a>
+            </section>
+          </article>
+
+          <article class="layout-item">
+            <div class="top-strip">
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
             </div>
-          </div>
-          <div class="layout layout-3">
-            <div class="layout-box top-strip"></div>
-            <a class="layout-preview" href="#">
+            <a class="layout-image" href="#">
               <img src="img/forte.jpg" width="240" height="240" alt="Forte">
             </a>
-          </div>
-          <div class="layout layout-4">
-            <div class="layout-box top-strip"></div>
-            <a class="layout-preview" href="#">
+            <section class="layout-price hidden">
+              <span class="layout-price-title">Forte</span>
+              <p>Отличный макет<br>
+              для личного блога</p>
+              <a class="btn price" href="#">5000 р.</a>
+            </section>
+          </article>
+
+          <article class="layout-item">
+            <div class="top-strip">
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+            </div>
+            <a class="layout-image" href="#">
               <img src="img/modern-organic.jpg" width="240" height="240" alt="Modern Organic Thai">
             </a>
-          </div>
-          <div class="layout layout-5">
-            <div class="layout-box top-strip"></div>
-            <a class="layout-preview" href="#">
+            <section class="layout-price hidden">
+              <span class="layout-price-title">Modern Organic Thai</span>
+              <p>Сайт для ресторана быстрого питания</p>
+              <a class="btn price" href="#">12000 р.</a>
+            </section>
+          </article>
+
+          <article class="layout-item">
+            <div class="top-strip">
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+            </div>
+            <a class="layout-image" href="#">
               <img src="img/avenue.jpg" width="240" height="240" alt="Avenue">
             </a>
-          </div>
-          <div class="layout layout-6">
-            <div class="layout-box top-strip"></div>
-            <a class="layout-preview" href="#">
+            <section class="layout-price hidden">
+              <span class="layout-price-title">Avenue</span>
+              <p>Макет для блога<br>
+               о путешествиях</p>
+              <a class="btn price" href="#">8000 р.</a>
+            </section>
+          </article>
+
+          <article class="layout-item">
+            <div class="top-strip">
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+              <div class="top-strip-dot"></div>
+            </div>
+            <a class="layout-image" href="#">
               <img src="img/dovetail.jpg" width="240" height="240" alt="Dovetail">
             </a>
-          </div>
+            <section class="layout-price hidden">
+              <span class="layout-price-title">Dovetail</span>
+              <p>Интерент магазин<br>
+               с галереей товаров</p>
+              <a class="btn price" href="#">14000 р.</a>
+            </section>
+          </article>
         </div>
+        <div class="catalog-pagination">
+         <div class="pages">
+           <a class="btn page active" href="#">1</a>
+           <a class="btn page" href="#">2</a>
+           <a class="btn page" href="#">3</a>
+           <a class="btn page next" href="#">Следующая</a>
+         </div>
+       </div>
       </div>
     </main>
 
@@ -167,7 +229,7 @@
       </div>
     </div>   
 
-    <footer class="container clearfix">
+    <footer class="main-footer container clearfix">
       <div class="footer-social">   
         <ul class="footer-social-links">
           <li>
