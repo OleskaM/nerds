@@ -14,23 +14,24 @@
         <div class="header-logo">
           <a href="index.html"> <img src="img/logo.png" width="139" height="58" alt="Nёrds"> </a>
         </div>
+
         <nav class="main-menu">
           <ul>
-            <li class="active">
+            <li>
               <a href="index.html">Студия</a>
             </li>
             <li>
               <a href="index.html">Клиенты</a>
             </li>
             <li>
-              <a href="index.html">Магазин</a>
+              <a class="active" href="catalog.html">Магазин</a>
             </li>
             <li>
               <a href="index.html">Контакты</a>
             </li>
           </ul>
           <div class="basket">
-            <a href="index.html"><i class="icon-basket"></i>Корзина</a>
+            <a class="active" href="index.html"><i class="icon-basket"></i>Корзина</a>
           </div> 
         </nav>
       </div>
@@ -50,7 +51,7 @@
             <h2 class="price">Стоимость:</h2>
             <div class="range-controls">
               <div class="scale">
-                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                <div class="bar" style="margin-left: 0%; width: 70%"></div>
               </div>
               <div class="toggle toggle-min"></div>
               <div class="toggle toggle-max"></div>
@@ -64,43 +65,48 @@
             <h2 class="grid">Сетка:</h2>
             <input type="radio" id="grid-1" name="grid" value="responsive" checked>
             <label for="grid-1">Адаптивная</label>
-            <input type="radio" id="grid-2" name="grid" value="fixed">
+            <input type="radio" id="grid-2" name="grid" value="fixed" >
             <label for="grid-2">Фиксированная</label>
-            <input type="radio" id="grid-3" name="grid" value="fluid">
+            <input type="radio" id="grid-3" name="grid" value="fluid" disabled>
             <label for="grid-3">Резиновая</label>
           </div>
           <div class="features-filter">          
             <h2>Особенности:</h2>
-              <input type="checkbox" id="feature-1" checked>
-              <label for="feature-1">Слайдер</label>
-              <input type="checkbox" id="feature-2">
-              <label for="feature-2">Блок преимуществ</label>
-              <input type="checkbox" id="feature-3" checked>
-              <label for="feature-3">Новости</label>
-              <input type="checkbox" id="feature-4">
-              <label for="feature-4">Галерея</label>
-              <input type="checkbox" id="feature-5">
-              <label for="feature-5">Корзина</label>
+              <input type="checkbox" name="feature-1" id="slider"checked>
+              <label for="slider">Слайдер</label>
+              <input type="checkbox" name="feature-2" id="features-block">
+              <label for="features-block">Блок преимуществ</label>
+              <input type="checkbox" name="feature-3" id="news"checked>
+              <label for="news">Новости</label>
+              <input type="checkbox" name="feature-4" id="gallery">
+              <label for="gallery">Галерея</label>
+              <input type="checkbox" name="feature-5" id="cart-feature" disabled>
+              <label for="cart-feature">Корзина</label>
             </div>
             <input type="submit" value="Показать" class="btn">
         </form>
       </div>
 
       <div class="catalog-block">
-        <div class="sorter-panel">
-          <span class="sort">Сортировать:</span>
-          <ul>
-            <li>
-              <a class="by-type" href="#">по типу</a>
-            </li>
-            <li>
-              <a class="by-price" href="#">по цене</a>
-            </li>
-            <li>
-              <a class="by-function" href="#">по функционалу</a>
-            </li>
-          </ul>
-          <div class="sorter-indicator"></div>
+        <div class="clearfix">
+          <div class="sorter-panel">         
+            <span class="sort">Сортировать:</span>
+            <ul>
+              <li>
+                <a class="by-price active" href="#">по цене</a>
+              </li>
+              <li>
+                <a class="by-type" href="#">по типу</a>
+              </li>            
+              <li>
+                <a class="by-function" href="#">по функционалу</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sorter-indicator">
+            <a class="sorter-desc active"></a>
+            <a class="sorter-asc"></a>
+          </div>
         </div>
 
         <div class="catalog-items">
@@ -216,7 +222,6 @@
       </div>
     </main>
 
-
     <div class="contacts-block" id="map">  
       <div class="container">
         <section class="contact-card">
@@ -249,14 +254,86 @@
       </div>
     </footer>
 
+    <div class="modal-content hidden">
+      <button class="modal-content-close" href="#">Закрыть</button>
+      <form class="form-fields" action="/echo" method="post">
+        <div class="clearfix">
+          <div class="col-left">
+            <label for="user-name">Ваше имя:</label> 
+              <input type="text" name="name" id="user-name" placeholder="Представтесь, пожалуйста" required>            
+          </div>
+          <div class="col-right">
+            <label for="user-email">Ваш e-mail:</label>
+              <input type="text" name="email" id="user-email" placeholder="Для отправки ответа" required>            
+          </div>
+        </div>    
+        <label for="user-message">Текст письма:</label><br>
+        <textarea name="message" id="user-message" placeholder="В свободной форме"></textarea>     
+        <div class="clearfix">
+          <button class="col-left submit btn" type="submit" name="submit">Отправить</button>
+          <button class="col-right cancel btn" type="submit" name="cancel">Отмена</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      var link = document.querySelector(".contact-us");
+      var popup = document.querySelector(".modal-content");
+      var close = document.querySelector(".modal-content-close");
+      var login = popup.querySelector("#user-name");
+      var email = popup.querySelector("#user-email");
+      var message = popup.querySelector("#user-message");      
+      var form = popup.querySelector("form");
+      var storage = localStorage.getItem("login");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+        if (storage) {
+          login.value = storage;
+          email.focus();
+        } else {
+          login.focus();
+        } 
+       });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+      
+      form.addEventListener("submit", function(event) {
+        if (!login.value || !email.value || !message.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else { 
+          localStorage.setItem("login", login.value);
+        }
+      });
+
+       window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+      
+    </script>
+
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script>
     ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [59.939460, 30.32048], 
+            center: [59.938723, 30.323094], 
             zoom: 16 
         }),
-        myPlacemark = new ymaps.Placemark([59.938554, 30.32248],
+        myPlacemark = new ymaps.Placemark([59.938725, 30.323132],
            {
             hintContent: 'Nёrds'
         }, {
@@ -271,6 +348,6 @@
 
 </script>
 
-<div id="map" class="map"></div>
+
   </body>
 </html>
