@@ -156,6 +156,7 @@ h3 {
 
 .main-menu ul {
     display: inline-block;
+    vertical-align: top;
     margin: 0;
     padding: 0;
     font-size: 0px;
@@ -163,6 +164,7 @@ h3 {
 
 .main-menu li {
     display: inline-block;
+    vertical-align: baseline;
     padding-right: 45px;
 }
 
@@ -172,6 +174,7 @@ h3 {
 
 .basket {
     display: inline-block;
+    vertical-align: top;
     width: 155px;
     text-align: right;
 }
@@ -270,11 +273,11 @@ h3 {
 
 .slider-indicator label {
     display: inline-block;
+    vertical-align: top;
     width: 4px;
     height: 4px;
     cursor: pointer;
-    margin: 0 3px;
-    vertical-align: top;
+    margin: 0 3px;    
     border: 3px solid white;
     border-radius: 50%;
     background: #ffffff;
@@ -385,15 +388,16 @@ h3 {
 }
 
 .service-column .btn{
-    font-size: 12px;
-    font-weight: 300;
+    display: inline-block;
     padding: 12px 38px;
+    font-size: 12px;
+    font-weight: 300;    
     color: #fed9da;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     border-radius: 3px;
-    display: inline-block;
+    
 }
 
 a.order-1 {
@@ -767,6 +771,7 @@ a.order-3:focus{
 .price-controls label {
     font-size: 16px;
     display: inline-block;
+    vertical-align: baseline;
     width: 50%;
 }
 
@@ -790,7 +795,7 @@ a.order-3:focus{
 
 .grid-filter, 
 .features-filter {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .grid-filter input[type='radio'],
@@ -935,6 +940,9 @@ input[type='checkbox'] + label:hover:before  {
     vertical-align: top;
 }
 
+.sorter-panel  li:last-child {
+    padding-right: 0px;
+}
 .sorter-panel  a:hover {
     color: #000000;
     border-bottom: 1px solid #00ca74;
@@ -1042,10 +1050,9 @@ input[type='checkbox'] + label:hover:before  {
     width: 200px;
     height: 200px;
     top: 50px;
-    left: 20px; 
+    left: 50%;
+    margin-left: -100px;
     padding: 30px 10px;
-    
-    margin: 0 auto; 
     background-color: #ffffff;
     display: none;
 }
@@ -1054,9 +1061,12 @@ input[type='checkbox'] + label:hover:before  {
    display: block;
 }
 
+.layout-discription {
+    min-height: 90px;
+    margin-bottom: 10px;
+}
 .layout-price-title {
     display: block;
-    min-height: 35px;
     margin: 0 auto;
     font-weight: 500;
     font-size: 18px;
@@ -1066,20 +1076,19 @@ input[type='checkbox'] + label:hover:before  {
 }
 
 .layout-price p{
-    width: 160px;
     margin: 0 auto;
-    padding-bottom: 30px;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Roboto Medium", Arial, sans-serif;
+    padding-top: 10px;
+    font-family: "Roboto Medium", "Arial", sans-serif;
     text-align: center;
     color: #283136;
 }
 
  .layout-price .price{
     display: inline-block;
-    width: 140px;
+    width: 100%;
     height: 38px;
     padding:0;
     vertical-align: middle;
@@ -1364,5 +1373,5 @@ input[type='checkbox'] + label:hover:before  {
 
 .modal-error {
   -webkit-animation: shake 0.8s;
-  animation: shake 0.6s;
+  animation: shake 0.3s;
 }

@@ -24,14 +24,14 @@
               <a href="index.html">Клиенты</a>
             </li>
             <li>
-              <a class="active" href="catalog.html">Магазин</a>
+              <a href="catalog.html">Магазин</a>
             </li>
             <li>
               <a href="index.html">Контакты</a>
             </li>
           </ul>
           <div class="basket">
-            <a class="active" href="index.html"><i class="icon-basket"></i>Корзина</a>
+            <a href="index.html"><i class="icon-basket"></i>Корзина</a>
           </div> 
         </nav>
       </div>
@@ -72,11 +72,11 @@
           </div>
           <div class="features-filter">          
             <h2>Особенности:</h2>
-              <input type="checkbox" name="feature-1" id="slider"checked>
+              <input type="checkbox" name="feature-1" id="slider" checked>
               <label for="slider">Слайдер</label>
               <input type="checkbox" name="feature-2" id="features-block">
               <label for="features-block">Блок преимуществ</label>
-              <input type="checkbox" name="feature-3" id="news"checked>
+              <input type="checkbox" name="feature-3" id="news" checked>
               <label for="news">Новости</label>
               <input type="checkbox" name="feature-4" id="gallery">
               <label for="gallery">Галерея</label>
@@ -120,9 +120,11 @@
               <img src="img/aviator.jpg" width="240" height="240" alt="Aviator">
             </a>
             <section class="layout-price hidden">
-              <span class="layout-price-title">Aviator</span>
-              <p>Одностраничный макет<br>
-              с авторским дизайном</p>
+              <div class="layout-discription">
+                <span class="layout-price-title">Aviator</span>
+                <p>Одностраничный макет<br>
+                с авторским дизайном</p>
+              </div>
               <a class="btn price" href="#">8000 р.</a>
             </section>
           </article>
@@ -137,9 +139,11 @@
               <img src="img/sunset.jpg" width="240" height="240" alt="Sunset">
             </a>
             <section class="layout-price hidden">
-              <span class="layout-price-title">Sunset</span>
-              <p>Интернет-магазин<br>
-              с личным кабинетом</p>
+              <div class="layout-discription">
+                <span class="layout-price-title">Sunset</span>
+                <p>Интернет-магазин<br>
+                с личным кабинетом</p>
+              </div>
               <a class="btn price" href="#">10000 р.</a>
             </section>
           </article>
@@ -154,9 +158,11 @@
               <img src="img/forte.jpg" width="240" height="240" alt="Forte">
             </a>
             <section class="layout-price hidden">
-              <span class="layout-price-title">Forte</span>
-              <p>Отличный макет<br>
-              для личного блога</p>
+              <div class="layout-discription">
+                <span class="layout-price-title">Forte</span>
+                <p>Отличный макет<br>
+                для личного блога</p>
+              </div>
               <a class="btn price" href="#">5000 р.</a>
             </section>
           </article>
@@ -171,8 +177,10 @@
               <img src="img/modern-organic.jpg" width="240" height="240" alt="Modern Organic Thai">
             </a>
             <section class="layout-price hidden">
-              <span class="layout-price-title">Modern Organic Thai</span>
-              <p>Сайт для ресторана быстрого питания</p>
+              <div class="layout-discription">
+                <span class="layout-price-title">Modern Organic Thai</span>
+                <p>Сайт для ресторана быстрого питания</p>
+              </div>
               <a class="btn price" href="#">12000 р.</a>
             </section>
           </article>
@@ -183,13 +191,15 @@
               <div class="top-strip-dot"></div>
               <div class="top-strip-dot"></div>
             </div>
-            <a class="layout-image" href="#">
+            <a class="layout-image">
               <img src="img/avenue.jpg" width="240" height="240" alt="Avenue">
             </a>
             <section class="layout-price hidden">
-              <span class="layout-price-title">Avenue</span>
-              <p>Макет для блога<br>
-               о путешествиях</p>
+              <div class="layout-discription">
+                <span class="layout-price-title">Avenue</span>
+                <p>Макет для блога<br>
+                 о путешествиях</p>
+              </div> 
               <a class="btn price" href="#">8000 р.</a>
             </section>
           </article>
@@ -204,9 +214,11 @@
               <img src="img/dovetail.jpg" width="240" height="240" alt="Dovetail">
             </a>
             <section class="layout-price hidden">
-              <span class="layout-price-title">Dovetail</span>
-              <p>Интерент магазин<br>
-               с галереей товаров</p>
+              <div class="layout-discription">
+                <span class="layout-price-title">Dovetail</span>
+                <p>Интерент магазин<br>
+                 с галереей товаров</p>
+              </div>
               <a class="btn price" href="#">14000 р.</a>
             </section>
           </article>
@@ -255,16 +267,16 @@
     </footer>
 
     <div class="modal-content hidden">
-      <button class="modal-content-close" href="#">Закрыть</button>
+      <button class="modal-content-close">Закрыть</button>
       <form class="form-fields" action="/echo" method="post">
         <div class="clearfix">
           <div class="col-left">
             <label for="user-name">Ваше имя:</label> 
-              <input type="text" name="name" id="user-name" placeholder="Представтесь, пожалуйста" required>            
+              <input type="text" name="name" id="user-name" placeholder="Представтесь, пожалуйста">            
           </div>
           <div class="col-right">
             <label for="user-email">Ваш e-mail:</label>
-              <input type="text" name="email" id="user-email" placeholder="Для отправки ответа" required>            
+              <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">            
           </div>
         </div>    
         <label for="user-message">Текст письма:</label><br>
@@ -276,78 +288,8 @@
       </form>
     </div>
 
-    <script type="text/javascript">
-      var link = document.querySelector(".contact-us");
-      var popup = document.querySelector(".modal-content");
-      var close = document.querySelector(".modal-content-close");
-      var login = popup.querySelector("#user-name");
-      var email = popup.querySelector("#user-email");
-      var message = popup.querySelector("#user-message");      
-      var form = popup.querySelector("form");
-      var storage = localStorage.getItem("login");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal-content-show");
-
-        if (storage) {
-          login.value = storage;
-          email.focus();
-        } else {
-          login.focus();
-        } 
-       });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
-      });
-      
-      form.addEventListener("submit", function(event) {
-        if (!login.value || !email.value || !message.value) {
-          event.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        } else { 
-          localStorage.setItem("login", login.value);
-        }
-      });
-
-       window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });
-      
-    </script>
-
-    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script>
-    ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [59.938723, 30.323094], 
-            zoom: 16 
-        }),
-        myPlacemark = new ymaps.Placemark([59.938725, 30.323132],
-           {
-            hintContent: 'Nёrds'
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/baloon.png', 
-            iconImageSize: [231, 190], 
-            iconImageOffset: [-49, -195] 
-        });
-
-    myMap.geoObjects.add(myPlacemark);
-});
-
-</script>
-
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 
   </body>
 </html>

@@ -23,14 +23,14 @@
               <a href="index.html">Клиенты</a>
             </li>
             <li>
-              <a class="active" href="catalog.html">Магазин</a>
+              <a href="catalog.html">Магазин</a>
             </li>
             <li>
               <a href="index.html">Контакты</a>
             </li>
           </ul>
           <div class="basket">
-            <a class="active" href="index.html"><i class="icon-basket"></i>Корзина</a>
+            <a href="index.html"><i class="icon-basket"></i>Корзина</a>
           </div> 
         </nav>
       </div>
@@ -190,27 +190,30 @@
       </div>
     </footer>
 
+    <div class="modal-content hidden">
+      <button class="modal-content-close">Закрыть</button>
+      <form class="form-fields" action="/echo" method="post">
+        <div class="clearfix">
+          <div class="col-left">
+            <label for="user-name">Ваше имя:</label> 
+              <input type="text" name="name" id="user-name" placeholder="Представтесь, пожалуйста">            
+          </div>
+          <div class="col-right">
+            <label for="user-email">Ваш e-mail:</label>
+              <input type="text" name="email" id="user-email" placeholder="Для отправки ответа">            
+          </div>
+        </div>    
+        <label for="user-message">Текст письма:</label><br>
+        <textarea name="message" id="user-message" placeholder="В свободной форме"></textarea>     
+        <div class="clearfix">
+          <button class="col-left submit btn" type="submit" name="submit">Отправить</button>
+          <button class="col-right cancel btn" type="submit" name="cancel">Отмена</button>
+        </div>
+      </form>
+    </div>
+
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script>
-    ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [59.939460, 30.32048], 
-            zoom: 16 
-        }),
-        myPlacemark = new ymaps.Placemark([59.938725, 30.323132],
-           {
-            hintContent: 'Nёrds'
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/baloon.png', 
-            iconImageSize: [231, 190], 
-            iconImageOffset: [-49, -195] 
-        });
-
-    myMap.geoObjects.add(myPlacemark);
-});
-
-</script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
   </body>
 </html>
