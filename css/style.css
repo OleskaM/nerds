@@ -73,7 +73,7 @@ body {
     font-family: 'Roboto' 'Arial' sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
+
     color: #283136;
 }
 
@@ -103,13 +103,13 @@ h3 {
     font-size: 12px;
     font-weight: 300;
     padding: 12px 20px;
-    color: #fed9da;
+    color: #ffffff;
     background-color: #00ca74;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     display: block;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .btn:active {
@@ -150,7 +150,7 @@ h3 {
 
 .main-menu {
     
-    padding-top: 33px;
+    padding-top: 30px;
     float: right;
 }
 
@@ -263,10 +263,10 @@ h3 {
 
 .slider-indicator {   
     position: absolute;
-    bottom: 95px;
+    bottom: 85px;
     left:50%;
     width: 60px;
-    margin-left: -30px;   
+    margin-left: -40px;   
     text-align: center;
     z-index: 10;  
 }
@@ -293,8 +293,10 @@ h3 {
     font-weight: 500;
 }
 
-.slider-text p {
+.slide-text p {
     line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 26px;
 }
 
 .slider .btn {
@@ -377,22 +379,25 @@ h3 {
 
 .service-title {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 31px;
     margin-top:24px;
     margin-bottom: 10px;
 }
 .service-column p {
     font-size: 15px;
     line-height: 22px;
+    margin: 0;
+    margin-top: 12px;
     margin-bottom: 26px;
 }
 
 .service-column .btn{
     display: inline-block;
-    padding: 12px 38px;
+    vertical-align: top;
+    padding: 12px 40px;
     font-size: 12px;
     font-weight: 300;    
-    color: #fed9da;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -440,7 +445,7 @@ a.order-3:focus{
 
 .company-description {
     border-bottom: 2px solid #eeeeee;
-    padding-top: 58px;
+    padding-top: 60px;
     padding-bottom: 46px;
 }
 
@@ -449,7 +454,9 @@ a.order-3:focus{
     width: 580px;
     min-height: 350px;
 }
-
+.principals {
+    margin-bottom: 40px;
+}
 .principals h2 {
     font-size: 36px;
     line-height: 36px;
@@ -458,11 +465,9 @@ a.order-3:focus{
 }
 .principals p {
     font-size: 16px;
-    line-height: 22px;
-    margin: 0;
-    margin-bottom: 40px;
-
+    line-height: 26px;
 }
+
 .company-description  h3 {
     font-size: 16px;
     line-height: 22px;
@@ -499,14 +504,14 @@ a.order-3:focus{
 }
 
 .main-content-logo {
-    text-align: center; 
-    min-height: 137px;
-    margin-bottom: 40px;  
+    text-align: center;
+    min-height: 160px;
+    margin-bottom: 30px;  
 }
 
 .logo-caption {
     position: relative;
-    padding-top: 25px;
+    padding-top: 22px;
     text-align: center;
 }
 
@@ -528,6 +533,10 @@ a.order-3:focus{
     background: #eeeeee;
 }
 
+.company-description ul {
+    line-height: 19px
+}
+
 .partner-block {
     display: table;
     width: 100%;
@@ -537,7 +546,9 @@ a.order-3:focus{
 .partner-logo {
     display: table-cell;
     text-align: center;
-    line-height: 165px;
+    line-height: 160px;
+    padding-left: 5px;
+    padding-top: 9px;
 }
 
 .partner-logo img {
@@ -598,7 +609,6 @@ a.order-3:focus{
 
 }
 .contact-us {
-    line-height: 18px;
     display: block;
     background-color: #fb565a;
 }
@@ -620,7 +630,6 @@ a.order-3:focus{
 }
 .footer-social {
     float: left;
-    width: 240px;
 }
 
 .footer-social ul {
@@ -632,14 +641,14 @@ a.order-3:focus{
 
  .footer-social li {
     display: inline-block;
-    margin-right: 25px;
     vertical-align: top;
+    margin-right: 30px;    
     line-height: 62px;
     font-size: 20px;
 }
 
  .footer-social li:last-child {
-    margin-right: 0;
+    margin-right: 0px;
  }
 
 .social-btn {
@@ -663,8 +672,7 @@ a.order-3:focus{
 }
 
 .footer-social-slogan {
-    float: right;
-    width: 560px;
+    float: right;  
 }
 
 .footer-social-slogan h2 {
@@ -680,8 +688,8 @@ a.order-3:focus{
 
 .main-page-title{
     background-color: #eeeeee;
-    padding-top: 65px;
-    min-height: 175px;
+    padding-top: 60px;
+    padding-bottom: 85px;
 }
 
 .big-heading {
@@ -689,7 +697,7 @@ a.order-3:focus{
     padding:0;
     font-weight: 500;
     font-size: 40px;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto' 'Arial' sans-serif;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
@@ -701,7 +709,7 @@ a.order-3:focus{
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 75px;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -719,7 +727,7 @@ a.order-3:focus{
 }
 
 .range-filter {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
 }
 .range-controls {
     position: relative;
@@ -727,7 +735,7 @@ a.order-3:focus{
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     border-radius: 5px;
     background: #f1f1f1;
 }
@@ -770,6 +778,7 @@ a.order-3:focus{
 
 .price-controls label {
     font-size: 16px;
+    font-weight: 500;
     display: inline-block;
     vertical-align: baseline;
     width: 50%;
@@ -793,9 +802,9 @@ a.order-3:focus{
     background: #f1f1f1;
 }
 
-.grid-filter, 
-.features-filter {
-    margin-bottom: 40px;
+.grid-filter,
+.features-filter{
+    margin-bottom: 32px;
 }
 
 .grid-filter input[type='radio'],
@@ -806,11 +815,11 @@ a.order-3:focus{
 input[type='radio'] + label,
 input[type='checkbox'] + label  {  
     display: inline-block;
+    vertical-align: top;
     width: 100%;
     line-height: 20px;
-    font-size: 16px;
-    vertical-align: top;
-    margin-bottom: 14px;
+    font-size: 16px;    
+    margin-bottom: 22px;
     color: #283136s;
     cursor: pointer;
 }
@@ -862,9 +871,9 @@ input[type='radio']:checked + label:before {
 input[type='checkbox']:checked + label:before {   
     content: '\2611';
     display: inline-block;
+    vertical-align: top;
     width: 24px;
     margin-right: 8px;    
-    vertical-align: top;
     font-size: 25px;   
     color: #b5b5b5;    
 }
@@ -876,10 +885,10 @@ input[type='checkbox'] + label:hover:before  {
 
 .filter-block .btn {
     display: inline-block;
-    width: 154px;
     vertical-align: top;
-    padding: 10px 0;
-    font-size: 12px;
+    width: 154px;    
+    padding: 12px 0;
+    font-size: 13px;
     font-weight: 700;
     line-height: 18px;
     text-decoration: none;
@@ -921,9 +930,9 @@ input[type='checkbox'] + label:hover:before  {
 
 .sorter-panel ul {
     display: inline-block;
-    margin: 0;
-    padding: 0;
     vertical-align: top;
+    margin: 0;
+    padding: 0;    
     font-size: 0;
     list-style: none;
 }
@@ -934,10 +943,11 @@ input[type='checkbox'] + label:hover:before  {
 
 .sorter-panel  li {
     display: inline-block;
+    vertical-align: top;
     font-size: 12px;
     padding-right: 45px;
     line-height: 18px;
-    vertical-align: top;
+    
 }
 
 .sorter-panel  li:last-child {
@@ -967,6 +977,7 @@ input[type='checkbox'] + label:hover:before  {
 .sorter-indicator {
     float: right;
     max-width: 40px;
+    margin-right: -5px;
 }
 
 .sorter-desc:after {
@@ -998,6 +1009,7 @@ input[type='checkbox'] + label:hover:before  {
 .layout-item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     border-radius: 3px;
     width: 240px;
     margin-right: 80px;
@@ -1064,6 +1076,7 @@ input[type='checkbox'] + label:hover:before  {
 .layout-discription {
     min-height: 90px;
     margin-bottom: 10px;
+    margin-top: 3px;
 }
 .layout-price-title {
     display: block;
@@ -1081,21 +1094,21 @@ input[type='checkbox'] + label:hover:before  {
     font-size: 14px;
     line-height: 18px;
     padding-top: 10px;
-    font-family: "Roboto Medium", "Arial", sans-serif;
+    font-family: 'Roboto' 'Arial' sans-serif;
     text-align: center;
     color: #283136;
 }
 
  .layout-price .price{
     display: inline-block;
-    width: 100%;
+    vertical-align: middle;
+    min-width: 140px;
     height: 38px;
     padding:0;
-    vertical-align: middle;
     font-weight: 500;
     font-size: 18px;
     line-height: 38px;
-    font-family: "Roboto Medium", Arial, sans-serif;
+    font-family: 'Roboto' 'Arial' sans-serif;
     text-align: center;
     color: #ffffff;
     background-color: #fb565a;
@@ -1121,13 +1134,13 @@ input[type='checkbox'] + label:hover:before  {
 
  .page {
    display: inline-block;
-   margin-right: 10px;
-   padding: 10px 15px; 
+   vertical-align: top;
+   margin-right: 11px;
+   padding: 10px 15px;  
    font-weight: 500;
    font-size: 12px;
    line-height: 18px;
-   font-family: "Roboto Medium", Arial, sans-serif;
-   vertical-align: top;
+   font-family: 'Roboto' 'Arial' sans-serif; 
    color: #000000;
    text-transform: uppercase;
    text-decoration: none; 
@@ -1151,7 +1164,7 @@ input[type='checkbox'] + label:hover:before  {
  .page.active,
  .page.active:hover,
  .page.active:active {
-    padding: 8px 13px; 
+    
     background-color: #ffffff;
     border: 2px solid #f1f1f1;
     opacity: 0.9; 
@@ -1273,7 +1286,7 @@ input[type='checkbox'] + label:hover:before  {
     font-weight: 500;
     padding: 10px 0;
     line-height: 18px;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto' 'Arial' sans-serif;
     vertical-align: top;
     border: none;
     outline: none;
