@@ -204,22 +204,27 @@ h3 {
 }
 
 .main-menu a.active:after {
-   content: '';
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   height: 2px;
-   background-color: #fb565a;
-   transition-duration: 0.3s;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #fb565a;
+    transition-duration: 0.3s;
  }
 
-.main-menu a:hover:after {
-     display: none;
-}
-
- .main-menu a:active:after {
-     display: none; 
+.main-menu a.active:hover:after,
+.main-menu a.active:active:after,
+.main-menu a.active:focus:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #fb565a;
+    transition-duration: 0.3s;
 }
 
  .main-menu a:hover i {
