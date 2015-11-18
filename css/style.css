@@ -1,5 +1,5 @@
-web
-@charset "UTF-8";
+
+@charset 'UTF-8';
 
  @font-face {
   font-family: 'symbols-nerds';
@@ -22,8 +22,8 @@ web
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "symbols-nerds";
+ [class^='icon-']:before, [class*=' icon-']:before {
+  font-family: 'symbols-nerds';
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -319,16 +319,16 @@ h3 {
     background-color: #b63538;
 }
 .slide-content:nth-child(1) {
-    background-image: url("../img/slider-1.png");
+    background-image: url('../img/slider-1.png');
 
 }
 
 .slide-content:nth-child(2) {
-    background-image: url("../img/slider-2.png");
+    background-image: url('../img/slider-2.png');
 }
     
 .slide-content:nth-child(3) {
-    background-image:  url("../img/slider-3.png");    
+    background-image:  url('../img/slider-3.png');    
 }
 
 #btn-1:checked ~ .slides .slide-content:nth-child(1) {
@@ -340,13 +340,13 @@ h3 {
 #btn-3:checked ~ .slides .slide-content:nth-child(3) {
     display: block;
 }
-#btn-1:checked ~ .slider-indicator label[for="btn-1"] {
+#btn-1:checked ~ .slider-indicator label[for='btn-1'] {
     background-color: #c1c1c1;
 }
-#btn-2:checked ~ .slider-indicator label[for="btn-2"] {
+#btn-2:checked ~ .slider-indicator label[for='btn-2'] {
     background-color: #c1c1c1;
 }
-#btn-3:checked ~ .slider-indicator label[for="btn-3"] {
+#btn-3:checked ~ .slider-indicator label[for='btn-3'] {
     background-color: #c1c1c1;
 }
  
@@ -531,7 +531,7 @@ a.order-3:focus{
 
 .logo-caption:after {
     position: absolute;
-    content: "";
+    content: '';
     top: 35px;
     left: 0;
     z-index: 0;
@@ -580,7 +580,7 @@ a.order-3:focus{
 .contacts-block {
     height: 416px;
     width: 100%;
-    background: url("../img/google-map-img.png") center no-repeat;
+    background: url('../img/google-map-img.png') center no-repeat;
 }
 
 .contacts-block .container {
@@ -996,7 +996,6 @@ input[type='checkbox'] + label:hover:before  {
 .sorter-indicator {
     float: right;
     max-width: 40px;
-    margin-right: -5px;
 }
 
 .sorter-desc:after {
@@ -1008,7 +1007,8 @@ input[type='checkbox'] + label:hover:before  {
 }
 
 .sorter-indicator a {
-     color: #c1c1c1;   
+     color: #c1c1c1; 
+     text-decoration: none;
 }
 
 .sorter-indicator a.active {
@@ -1019,6 +1019,9 @@ input[type='checkbox'] + label:hover:before  {
     color: #000000;
 } 
 
+.sorter-indicator a:after {
+    border-bottom: 0;
+}
 
 /*catalog-items block*/
 
@@ -1251,19 +1254,19 @@ input[type='checkbox'] + label:hover:before  {
     float: right; 
 }
 
-.form-fields input[type="text"]::-webkit-input-placeholder {
+.form-fields input[type='text']::-webkit-input-placeholder {
    color: black;
 }
 
-.form-fields input[type="text"]:-moz-placeholder { /* Firefox 18- */
+.form-fields input[type='text']:-moz-placeholder { 
    color: black;  
 }
 
-.form-fields input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+.form-fields input[type='text']::-moz-placeholder {  
    color: black;  
 }
 
-.form-fields input[type="text"]:-ms-input-placeholder {  
+.form-fields input[type='text']:-ms-input-placeholder {  
    color: black;  
 }
 
@@ -1272,11 +1275,11 @@ input[type='checkbox'] + label:hover:before  {
    color: black;
 }
 
-.form-fields textarea::-moz-placeholder { /* Firefox 18- */
+.form-fields textarea::-moz-placeholder { 
    color: black;  
 }
 
-.form-fields textarea::-moz-placeholder {  /* Firefox 19+ */
+.form-fields textarea::-moz-placeholder { 
    color: black;  
 }
 
@@ -1284,7 +1287,7 @@ input[type='checkbox'] + label:hover:before  {
    color: black;  
 }
 
-.form-fields input[type="text"],
+.form-fields input[type='text'],
 .form-fields textarea {
     width: 100%;
     margin-top: 10px;
@@ -1307,12 +1310,12 @@ input[type='checkbox'] + label:hover:before  {
     margin-bottom: 48px;
 }
 
-.form-fields input[type="text"]:hover,
+.form-fields input[type='text']:hover,
 .form-fields textarea:hover {
     border: 2px solid #a2a9ac;
 }
 
-.form-fields input[type="text"]:focus,
+.form-fields input[type='text']:focus,
 .form-fields textarea:focus {
     border: 2px solid #56bffb;
 }
@@ -1323,7 +1326,7 @@ input[type='checkbox'] + label:hover:before  {
     left: 50%;
     box-sizing: border-box;
     margin-left: -315px;
-    margin-top: 230px;
+    margin-top: 0px;
     width: 630px;
     padding-left: 80px;
     padding-right: 90px;
