@@ -1,4 +1,4 @@
-
+web
 @charset "UTF-8";
 
  @font-face {
@@ -195,7 +195,15 @@ h3 {
     text-transform: uppercase;
 }
 
-.main-menu li a.active:after {
+.main-menu a:hover {
+    color: #fb565a;
+}
+
+ .main-menu a:active {
+     color: #aaaaaa;
+}
+
+.main-menu a.active:after {
    content: '';
    position: absolute;
    right: 0;
@@ -206,17 +214,22 @@ h3 {
    transition-duration: 0.3s;
  }
 
-.main-menu a:hover {
-     color: #fb565a;
- }
+.main-menu a.active:hover a:after {
+     display: none;
+}
+
+ .main-menu a:hover a.active:after {
+    
+}
+
+ .main-menu a:active a.active:after {
+     display: none; 
+}
 
  .main-menu a:hover i {
      color: #fb565a;
  }
  
- .main-menu a:active {
-     color: #aaaaaa;
- }
 
  .main-menu a:active i {
      color:  #d6d6d6;
@@ -539,6 +552,7 @@ a.order-3:focus{
 
 .partner-block {
     display: table;
+    height: 160px;
     width: 100%;
     border-bottom: 2px solid #eeeeee;  
 }
@@ -547,10 +561,8 @@ a.order-3:focus{
     display: table-cell;
     text-align: left;
     width: 37%;
-
-    line-height: 160px;
-    padding-top: 9px;
-    
+    vertical-align: middle;
+    padding-top: 9px;    
     padding-left: 8px;
 }
 
@@ -1277,6 +1289,7 @@ input[type='checkbox'] + label:hover:before  {
 .form-fields textarea:-ms-input-placeholder {  
    color: black;  
 }
+
 .form-fields input[type="text"],
 .form-fields textarea {
     width: 100%;
