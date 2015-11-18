@@ -214,15 +214,11 @@ h3 {
    transition-duration: 0.3s;
  }
 
-.main-menu a.active:hover a:after {
+.main-menu a:hover:after {
      display: none;
 }
 
- .main-menu a:hover a.active:after {
-    
-}
-
- .main-menu a:active a.active:after {
+ .main-menu a:active:after {
      display: none; 
 }
 
@@ -230,7 +226,6 @@ h3 {
      color: #fb565a;
  }
  
-
  .main-menu a:active i {
      color:  #d6d6d6;
  }
@@ -248,8 +243,7 @@ h3 {
     margin-left: 15px;
     height: 2px;
     background-color: #fb565a;
-    transition-duration: 0.3s;
- }
+}
 
 /*slider*/
 
