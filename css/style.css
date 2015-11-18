@@ -241,7 +241,7 @@ h3 {
 /*slider*/
 
 .slider-block {
-    padding-top: 40px;
+    padding-top: 44px;
     background-color: #eeeeee;
 }
 .slider {
@@ -465,7 +465,7 @@ a.order-3:focus{
 }
 .principals p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 25px;
 }
 
 .company-description  h3 {
@@ -545,10 +545,13 @@ a.order-3:focus{
 
 .partner-logo {
     display: table-cell;
-    text-align: center;
+    text-align: left;
+    width: 37%;
+
     line-height: 160px;
-    padding-left: 5px;
     padding-top: 9px;
+    
+    padding-left: 8px;
 }
 
 .partner-logo img {
@@ -571,6 +574,7 @@ a.order-3:focus{
 .contacts-block {
     height: 416px;
     width: 100%;
+    background: url("../img/google-map-img.png") center no-repeat;
 }
 
 .contacts-block .container {
@@ -583,7 +587,7 @@ a.order-3:focus{
     width: 204px;
     left: 10px;
     top: 88px;
-    padding: 25px 23px;
+    padding: 28px 23px;
     font-size: 16px;
     line-height: 20px;
     color: #666666;
@@ -599,18 +603,19 @@ a.order-3:focus{
 }
 
 .adress {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .phone {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
 }
 .contact-us {
     display: block;
     background-color: #fb565a;
+    padding: 10px 20px;
 }
 
 .contact-us:hover {
@@ -628,9 +633,11 @@ a.order-3:focus{
     padding-top: 76px;
     padding-bottom: 76px;
 }
+
 .footer-social {
-    float: left;
-}
+     float: left;
+     width: 240px;
+ }
 
 .footer-social ul {
     margin: 0;
@@ -642,12 +649,13 @@ a.order-3:focus{
  .footer-social li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 30px;    
+    margin-right: 27px; 
+    margin-bottom: 10px;   
     line-height: 62px;
     font-size: 20px;
 }
 
- .footer-social li:last-child {
+ .footer-social li:nth-child(3n+3) {
     margin-right: 0px;
  }
 
@@ -673,11 +681,12 @@ a.order-3:focus{
 
 .footer-social-slogan {
     float: right;  
+    min-width: 560px;
 }
 
 .footer-social-slogan h2 {
     margin: 0px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 .footer-social-slogan p {
     margin: 0px;
@@ -710,7 +719,7 @@ a.order-3:focus{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 75px;
 }
 
 .filter-block {
@@ -802,9 +811,12 @@ a.order-3:focus{
     background: #f1f1f1;
 }
 
-.grid-filter,
-.features-filter{
-    margin-bottom: 32px;
+.grid-filter {
+    margin-bottom: 30px;
+}
+
+.features-filter {
+    margin-bottom: 35px;
 }
 
 .grid-filter input[type='radio'],
@@ -822,6 +834,7 @@ input[type='checkbox'] + label  {
     margin-bottom: 22px;
     color: #283136s;
     cursor: pointer;
+    padding-left: 5px
 }
 
 input[type='checkbox'] + label:hover,
@@ -888,7 +901,7 @@ input[type='checkbox'] + label:hover:before  {
     vertical-align: top;
     width: 154px;    
     padding: 12px 0;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 18px;
     text-decoration: none;
@@ -1248,13 +1261,29 @@ input[type='checkbox'] + label:hover:before  {
    color: black;  
 }
 
+
+.form-fields textarea::-webkit-input-placeholder {
+   color: black;
+}
+
+.form-fields textarea::-moz-placeholder { /* Firefox 18- */
+   color: black;  
+}
+
+.form-fields textarea::-moz-placeholder {  /* Firefox 19+ */
+   color: black;  
+}
+
+.form-fields textarea:-ms-input-placeholder {  
+   color: black;  
+}
 .form-fields input[type="text"],
 .form-fields textarea {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     box-sizing: border-box;
-    padding: 7px 14px;
+    padding: 8px 14px;
 
     font-size: 12px;
     line-height: 18px;
@@ -1281,6 +1310,23 @@ input[type='checkbox'] + label:hover:before  {
     border: 2px solid #56bffb;
 }
 
+.modal-content {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    box-sizing: border-box;
+    margin-left: -315px;
+    margin-top: 230px;
+    width: 630px;
+    padding-left: 80px;
+    padding-right: 90px;
+    padding-top: 55px;
+    padding-bottom: 45px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0,1,1,0.7);
+    display: none;
+    z-index:50;
+}
 .modal-content .btn {
     font-size: 12px;
     font-weight: 500;
@@ -1355,6 +1401,7 @@ input[type='checkbox'] + label:hover:before  {
 }
 
 .modal-content-show {
+  
   display: block;
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
@@ -1388,3 +1435,4 @@ input[type='checkbox'] + label:hover:before  {
   -webkit-animation: shake 0.8s;
   animation: shake 0.3s;
 }
+

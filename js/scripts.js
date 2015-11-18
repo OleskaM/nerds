@@ -56,8 +56,8 @@ window.addEventListener("keydown", function(event) {
 
 ymaps.ready(function() {
     var myMap = new ymaps.Map('map', {
-            center: [59.939146,30.320590],
-            zoom: 16
+            center: [59.939245,30.319933],
+            zoom: 17
         }),
         myPlacemark = new ymaps.Placemark([59.938725, 30.323132],
             {
