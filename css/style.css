@@ -975,6 +975,13 @@ input[type='checkbox'] + label:hover:before  {
     padding-right: 0px;
 }
 
+.sorter-panel a {
+    display: block;
+    text-decoration: none;
+    color: #cacaca;
+    border-bottom: 1px dotted #00ca74;
+}
+
 .sorter-panel  a:hover {
     color: #000000;
     border-bottom: 1px solid #00ca74;
@@ -983,13 +990,6 @@ input[type='checkbox'] + label:hover:before  {
 .sorter-panel  a:active {
     color: #000000;
     border-bottom: none;    
-}
-
-.sorter-panel a {
-    display: block;
-    text-decoration: none;
-    color: #cacaca;
-    border-bottom: 1px dotted #00ca74;
 }
 
 .sorter-indicator {
@@ -1006,8 +1006,8 @@ input[type='checkbox'] + label:hover:before  {
 }
 
 .sorter-indicator a {
-     color: #c1c1c1; 
-     text-decoration: none;
+    color: #c1c1c1; 
+    text-decoration: none;
 }
 
 .sorter-indicator a.active {
