@@ -1429,6 +1429,9 @@ input[type='checkbox'] + label:hover:before  {
 
 
 /*MODAL-CONTENT outer page styles*/
+.larger {
+    padding-bottom: 25px;
+}
 
 .modal-content-outer {
     width: 200px;
