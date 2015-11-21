@@ -634,7 +634,6 @@ a.order-3:focus{
     background-color: #b63538;
 }
 
-
 /*footer*/
 
 .main-footer {
@@ -1193,15 +1192,15 @@ input[type='checkbox'] + label:hover:before  {
     opacity: 0.9; 
 }
 
-  /*modal-content block styles*/
+/*modal-content block styles*/
 
 .modal-content {
-    position: absolute;
+    position: fixed;
     top: 40px;
     left: 50%;
     box-sizing: border-box;
     margin-left: -315px;
-    margin-top: 250px;
+    margin-top: 0px;
     width: 630px;
     padding-left: 80px;
     padding-right: 90px;
@@ -1209,6 +1208,7 @@ input[type='checkbox'] + label:hover:before  {
     padding-bottom: 45px;
     background-color: #ffffff;
     box-shadow: 0 20px 40px rgba(0,1,1,0.7);
+    z-index: 10;
     display: none;
 }
 
@@ -1318,24 +1318,6 @@ input[type='checkbox'] + label:hover:before  {
     border: 2px solid #56bffb;
 }
 
-.modal-content {
-    position: fixed;
-    top: 40px;
-    left: 50%;
-    box-sizing: border-box;
-    margin-left: -315px;
-    margin-top: 0px;
-    width: 630px;
-    padding-left: 80px;
-    padding-right: 90px;
-    padding-top: 55px;
-    padding-bottom: 45px;
-    background-color: #ffffff;
-    box-shadow: 0 20px 40px rgba(0,1,1,0.7);
-    display: none;
-    z-index:50;
-}
-
 .modal-content .btn {
     font-size: 12px;
     font-weight: 500;
@@ -1378,7 +1360,7 @@ input[type='checkbox'] + label:hover:before  {
     background-color: #d5d5d5;
     box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
 }
- 
+
  @-webkit-keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -1409,11 +1391,15 @@ input[type='checkbox'] + label:hover:before  {
   }
 }
 
-.modal-content-show {
-  
+.modal-content-show {  
   display: block;
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.8s;
+  animation: shake 0.3s;
 }
 
 @-webkit-keyframes shake {
@@ -1440,8 +1426,78 @@ input[type='checkbox'] + label:hover:before  {
     }
 }    
 
-.modal-error {
-  -webkit-animation: shake 0.8s;
-  animation: shake 0.3s;
+
+
+/*MODAL-CONTENT outer page styles*/
+
+.modal-content-outer {
+    width: 200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 630px;
+    padding: 80px;
+    background-color: #ffffff;
 }
 
+.modal-content-outer .form {
+    width: 460px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.modal-content-outer .form-fields {
+    width: 460px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.model-content-outer textarea {
+    margin-bottom: 25px;
+}
+
+.modal-content-outer .btn {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 0;
+    line-height: 18px;
+    font-family: 'Roboto' 'Arial' sans-serif;
+    vertical-align: top;
+    border: none;
+    outline: none;
+}
+ 
+.modal-content-outer .submit {
+    color: #fff6f6;
+    background-color: #fb565a ;
+}
+
+.modal-content-outer .submit:hover {
+    color: #fff6f6;
+    background-color: #d6494d;
+}
+ 
+.modal-content-outer .submit:active {
+    color: #fff6f6;
+    background-color: #b63538;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+ 
+.modal-content-outer .cancel{
+    color: #000000;
+    background-color: #f1f1f1;
+}
+
+.modal-content-outer .cancel:hover{
+    color: #000000;
+    background-color: #e5e5e5;
+}
+
+.modal-content-outer .cancel:active{
+    color: #000000;
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+}
